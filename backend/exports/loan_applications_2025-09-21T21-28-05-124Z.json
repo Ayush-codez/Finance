@@ -1,0 +1,94 @@
+{
+  "exportInfo": {
+    "timestamp": "2025-09-21T21:28:05.127Z",
+    "totalRecords": 7,
+    "database": "loan_manage",
+    "collection": "loan_applications"
+  },
+  "data": [
+    {
+      "id": "68d06ada15aeebb7ce831dd7",
+      "loanType": null,
+      "loanAmount": null,
+      "status": "clicked",
+      "userSessionId": null,
+      "userInfo": null,
+      "organizationInfo": null,
+      "createdAt": "2025-09-21T13:43:43.000Z",
+      "updatedAt": "2025-09-21T13:43:43.000Z",
+      "__v": 0
+    },
+    {
+      "id": "68d06ada15aeebb7ce831dd8",
+      "loanType": null,
+      "loanAmount": null,
+      "status": "clicked",
+      "userSessionId": null,
+      "userInfo": null,
+      "organizationInfo": null,
+      "createdAt": "2025-09-21T13:44:02.000Z",
+      "updatedAt": "2025-09-21T13:44:02.000Z",
+      "__v": 0
+    },
+    {
+      "id": "68d06ada15aeebb7ce831dd9",
+      "loanType": null,
+      "loanAmount": null,
+      "status": "clicked",
+      "userSessionId": null,
+      "userInfo": null,
+      "organizationInfo": null,
+      "createdAt": "2025-09-21T13:44:13.000Z",
+      "updatedAt": "2025-09-21T13:44:13.000Z",
+      "__v": 0
+    },
+    {
+      "id": "68d06ada15aeebb7ce831dda",
+      "loanType": null,
+      "loanAmount": null,
+      "status": "clicked",
+      "userSessionId": null,
+      "userInfo": null,
+      "organizationInfo": null,
+      "createdAt": "2025-09-21T13:44:22.000Z",
+      "updatedAt": "2025-09-21T13:44:22.000Z",
+      "__v": 0
+    },
+    {
+      "id": "68d06afa15aeebb7ce831ddc",
+      "loanType": null,
+      "loanAmount": null,
+      "status": "clicked",
+      "userSessionId": null,
+      "userInfo": null,
+      "organizationInfo": null,
+      "createdAt": "2025-09-21T21:15:38.277Z",
+      "updatedAt": "2025-09-21T21:15:38.277Z",
+      "__v": 0
+    },
+    {
+      "id": "68d06bad15aeebb7ce831de0",
+      "loanType": null,
+      "loanAmount": null,
+      "status": "clicked",
+      "userSessionId": null,
+      "userInfo": null,
+      "organizationInfo": null,
+      "createdAt": "2025-09-21T21:18:37.541Z",
+      "updatedAt": "2025-09-21T21:18:37.541Z",
+      "__v": 0
+    },
+    {
+      "id": "68d06d3c4369fc222935dc22",
+      "loanType": null,
+      "loanAmount": null,
+      "status": "clicked",
+      "userSessionId": null,
+      "userInfo": null,
+      "organizationInfo": null,
+      "createdAt": "2025-09-21T21:25:16.267Z",
+      "updatedAt": "2025-09-21T21:25:16.267Z",
+      "__v": 0
+    }
+  ]
+}

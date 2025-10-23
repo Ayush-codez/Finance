@@ -1,0 +1,157 @@
+[
+  {
+    "id": "loan_001",
+    "name": "Personal Loan - Quick Cash",
+    "lender": "HDFC Bank",
+    "lenderType": "bank",
+    "category": "personal",
+    "country": "India",
+    "interestRate": "10.5% - 24%",
+    "loanAmount": {
+      "min": 25000,
+      "max": 2000000
+    },
+    "tenure": "12-60 months",
+    "processingFee": "Up to 2.5%",
+    "description": "Get instant personal loans with minimal documentation. Quick approval within 24 hours.",
+    "features": [
+      "Instant approval",
+      "Minimal documentation",
+      "Flexible repayment",
+      "No collateral required"
+    ],
+    "eligibility": {
+      "minAge": 21,
+      "maxAge": 65,
+      "minIncome": 15000,
+      "employmentType": ["Salaried", "Self-employed"]
+    },
+    "applicationUrl": "https://www.hdfcbank.com/personal/borrow/popular-loans/personal-loan",
+    "rating": 4.2,
+    "tags": ["instant", "minimal-docs", "flexible"]
+  },
+  {
+    "id": "loan_002", 
+    "name": "Home Loan - Dream Home",
+    "lender": "State Bank of India",
+    "lenderType": "bank",
+    "category": "home",
+    "country": "India",
+    "interestRate": "8.5% - 9.5%",
+    "loanAmount": {
+      "min": 100000,
+      "max": 50000000
+    },
+    "tenure": "120-360 months",
+    "processingFee": "0.5% of loan amount",
+    "description": "Realize your dream of owning a home with competitive interest rates and flexible repayment options.",
+    "features": [
+      "Competitive interest rates",
+      "Up to 30 years tenure",
+      "Tax benefits available",
+      "Balance transfer facility"
+    ],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 70,
+      "minIncome": 25000,
+      "employmentType": ["Salaried", "Self-employed", "Professional"]
+    },
+    "applicationUrl": "https://www.sbi.co.in/web/personal-banking/loans/home-loans",
+    "rating": 4.0,
+    "tags": ["home", "long-term", "tax-benefits"]
+  },
+  {
+    "id": "loan_003",
+    "name": "Business Loan - Growth Capital",
+    "lender": "ICICI Bank",
+    "lenderType": "bank", 
+    "category": "business",
+    "country": "India",
+    "interestRate": "12% - 18%",
+    "loanAmount": {
+      "min": 100000,
+      "max": 10000000
+    },
+    "tenure": "12-84 months",
+    "processingFee": "1% to 3%",
+    "description": "Fuel your business growth with our flexible business loans. Quick disbursement and competitive rates.",
+    "features": [
+      "Quick disbursement",
+      "Flexible repayment",
+      "Minimal documentation",
+      "Overdraft facility available"
+    ],
+    "eligibility": {
+      "minAge": 21,
+      "maxAge": 65,
+      "businessVintage": "2 years",
+      "minTurnover": 2000000
+    },
+    "applicationUrl": "https://www.icicibank.com/business-banking/loans/business-loan",
+    "rating": 4.1,
+    "tags": ["business", "growth", "quick-disbursement"]
+  },
+  {
+    "id": "loan_004",
+    "name": "Car Loan - Drive Your Dreams",
+    "lender": "Bajaj Finserv",
+    "lenderType": "nbfc",
+    "category": "auto",
+    "country": "India",
+    "interestRate": "7.99% - 15%",
+    "loanAmount": {
+      "min": 100000,
+      "max": 5000000
+    },
+    "tenure": "12-84 months",
+    "processingFee": "Up to 3%",
+    "description": "Get your dream car with attractive interest rates and easy EMI options. Both new and used cars eligible.",
+    "features": [
+      "Up to 90% financing",
+      "New and used cars",
+      "Quick approval",
+      "Flexible EMI options"
+    ],
+    "eligibility": {
+      "minAge": 21,
+      "maxAge": 65,
+      "minIncome": 20000,
+      "employmentType": ["Salaried", "Self-employed"]
+    },
+    "applicationUrl": "https://www.bajajfinserv.in/car-loan",
+    "rating": 4.3,
+    "tags": ["auto", "new-used", "quick-approval"]
+  },
+  {
+    "id": "loan_005",
+    "name": "Education Loan - Invest in Future",
+    "lender": "Bank of Baroda",
+    "lenderType": "bank",
+    "category": "education",
+    "country": "India", 
+    "interestRate": "8.5% - 12.5%",
+    "loanAmount": {
+      "min": 50000,
+      "max": 7500000
+    },
+    "tenure": "60-180 months",
+    "processingFee": "1% of loan amount",
+    "description": "Fund your education dreams with comprehensive education loans for domestic and international studies.",
+    "features": [
+      "Covers tuition and living expenses",
+      "Moratorium period available", 
+      "Tax benefits under 80E",
+      "Simple documentation"
+    ],
+    "eligibility": {
+      "minAge": 16,
+      "maxAge": 35,
+      "academicRecord": "Good academic record required",
+      "coApplicant": "Parent/Guardian required"
+    },
+    "applicationUrl": "https://www.bankofbaroda.in/personal-banking/loans/education-loan",
+    "rating": 4.0,
+    "tags": ["education", "international", "tax-benefits"]
+  }
+]

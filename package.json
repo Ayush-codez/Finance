@@ -1,43 +1,113 @@
 {
-  "name": "loan-comparison-website",
+  "name": "loan-management-system",
   "version": "1.0.0",
-  "description": "A comprehensive platform for comparing and selecting loans from various lenders",
-  "main": "index.js",
+  "description": "A comprehensive loan management system with modern architecture",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "backend",
+    "frontend"
+  ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "react-router-dom": "^6.8.0",
-    "lucide-react": "^0.263.1",
-    "clsx": "^1.2.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "build": "npm run build --workspaces --if-present",
+    "build:shared": "npm run build -w shared",
+    "build:backend": "npm run build -w backend",
+    "build:frontend": "npm run build -w frontend",
+    "dev": "concurrently \"npm run dev -w shared\" \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "dev:shared": "npm run dev -w shared",
+    "dev:backend": "npm run dev -w backend",
+    "dev:frontend": "npm run dev -w frontend",
+    "start": "npm run start --workspaces --if-present",
+    "start:backend": "npm run start -w backend",
+    "start:frontend": "npm run start -w frontend",
+    "test": "npm run test --workspaces --if-present",
+    "test:shared": "npm run test -w shared",
+    "test:backend": "npm run test -w backend",
+    "test:frontend": "npm run test -w frontend",
+    "lint": "npm run lint --workspaces --if-present",
+    "lint:fix": "npm run lint:fix --workspaces --if-present",
+    "type-check": "npm run type-check --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present && rimraf node_modules",
+    "reset": "npm run clean && npm install",
+    "postinstall": "npm run build:shared",
+    "prepare": "husky install",
+    "commit": "git-cz",
+    "release": "standard-version",
+    "docker:build": "docker build -t loan-management-system .",
+    "docker:run": "docker run -p 5000:5000 -p 3000:3000 loan-management-system",
+    "deploy:staging": "npm run build && npm run deploy:staging --workspaces --if-present",
+    "deploy:production": "npm run build && npm run deploy:production --workspaces --if-present"
   },
   "keywords": [
     "loan",
-    "comparison",
-    "financing",
+    "management",
+    "fintech",
+    "sme",
     "startup",
-    "SME",
-    "NGO",
-    "government schemes"
+    "government",
+    "banking",
+    "typescript",
+    "react",
+    "nodejs",
+    "mongodb",
+    "sqlite"
   ],
-  "author": "Your Name",
-  "license": "MIT"
+  "author": "Loan Management Team",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/loan-management-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/loan-management-system/issues"
+  },
+  "homepage": "https://github.com/your-org/loan-management-system#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "commitizen": "^4.3.0",
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.0",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "**/*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "standard-version": {
+    "scripts": {
+      "prebump": "npm run test",
+      "precommit": "npm run build"
+    }
+  }
 }

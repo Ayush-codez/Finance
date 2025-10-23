@@ -1,0 +1,50 @@
+{
+  "name": "loan-comparison-website",
+  "version": "1.0.0",
+  "description": "A comprehensive platform for comparing and selecting loans from various lenders",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"react-scripts start\"",
+    "dev": "react-scripts start",
+    "server": "node server/server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "react-router-dom": "^6.8.0",
+    "lucide-react": "^0.263.1",
+    "clsx": "^1.2.1",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "cors": "^2.8.5",
+    "axios": "^1.4.0",
+    "concurrently": "^8.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [
+    "loan",
+    "comparison",
+    "financing",
+    "startup",
+    "SME",
+    "NGO",
+    "government schemes"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
