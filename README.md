@@ -164,27 +164,6 @@ npm run type-check            # Type check all TypeScript
 npm run clean                 # Clean all build artifacts
 npm run reset                 # Clean and reinstall dependencies
 ```
-
-### Database Options
-
-**SQLite (Development)**
-```bash
-# Uses local SQLite file
-SQLITE_PATH=./database/loan_applications.db
-npm run dev:backend
-```
-
-**MongoDB (Production)**
-```bash
-# Requires MongoDB connection
-MONGODB_URI=mongodb://localhost:27017/loan_management
-npm run dev:backend
-
-# Or with Docker
-docker-compose up mongodb
-npm run dev:backend
-```
-
 ## API Endpoints
 
 ### Loans
@@ -205,31 +184,6 @@ npm run dev:backend
 - **TypeScript** - Type safety and better development experience
 - **Joi** - Schema validation for data integrity
 - **Lodash** - Utility functions
-
-### Frontend
-- **React.js 18** - Modern UI framework with hooks
-- **React Router DOM** - Client-side routing
-- **Context API** - State management
-- **Lucide React** - Modern icon library
-- **CSS3 + CSS Variables** - Styling with design system
-- **Axios** - HTTP client with interceptors
-- **TypeScript** - Type safety
-
-### Backend
-- **Node.js** - JavaScript runtime
-- **Express.js** - Web application framework
-- **TypeScript** - Type safety and better development experience
-- **MongoDB + Mongoose** - Primary database with ODM
-- **SQLite3** - Lightweight alternative database
-- **JWT** - JSON Web Token authentication
-- **bcryptjs** - Password hashing
-- **Helmet** - Security middleware
-- **CORS** - Cross-origin resource sharing
-- **Morgan** - HTTP request logging
-- **Multer** - File upload handling
-- **Cheerio** - Server-side HTML parsing
-- **Joi** - Request validation
-- **Axios** - External API integration
 
 ### Development & Deployment
 - **npm Workspaces** - Monorepo management
@@ -325,43 +279,6 @@ npm run deploy:staging
 npm run deploy:production
 ```
 
-## ⚙️ Configuration
-
-### Environment Variables
-
-Copy `.env.example` to `.env` and configure:
-
-```bash
-# Application
-NODE_ENV=development
-PORT=5000
-LOG_LEVEL=info
-
-# Database
-MONGODB_URI=mongodb://localhost:27017/loan_management
-SQLITE_PATH=./database/loan_applications.db
-
-# Security
-JWT_SECRET=your-super-secret-jwt-key
-SESSION_SECRET=your-session-secret
-
-# API Configuration
-CORS_ORIGIN=http://localhost:3000
-RATE_LIMIT_MAX_REQUESTS=100
-
-# External Services
-PLAID_CLIENT_ID=your-plaid-client-id
-PLAID_SECRET=your-plaid-secret
-ALPHA_VANTAGE_API_KEY=your-api-key
-
-# Analytics
-ANALYTICS_ENABLED=true
-GOOGLE_ANALYTICS_ID=GA-XXXXXXXXX
-
-# Frontend
-REACT_APP_API_URL=http://localhost:5000/api
-REACT_APP_ENVIRONMENT=development
-```
 
 ### Configuration Management
 
